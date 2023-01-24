@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+</html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador Alura</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="imagenes/logo.png" alt="Logo de Alura">
+        </header>
+
+        <main>
+            <section class="section1">
+                <textarea class="text-area" placeholder="Ingrese el texto aquí" oninput="this.value = this.value.replace(/[^a-zñ ]/,'')" autofocus></textarea>
+                <div class="contenedor-icono">
+                    <img src="imagenes/Vector.png" alt="icono">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="contenedor-botones">
+                    <input type="button" class="btn-enc" value="Encriptar">
+                    <input type="button" class="btn-desenc" value="Desencriptar">
+                </div>
+                <div class="contenedor-limpiar">
+                    <input type="button" class="btn-limpiar" value="Limpiar">
+                </div>
+            </section>
+
+            <section class="section2">
+                <div class="contenedor-munieco">
+                    <img src="imagenes/muñeco.png" alt="Muñeco alura">
+                </div>
+                <div class="contenedor-h3">
+                    <h3>Ningún mensaje fue encontrado</h3>
+                </div>
+                <div class="contenedor-resultado">
+                    <h3 class="accion-realizada"></h3>
+                    <textarea class="text-result" readonly></textarea>
+                </div>
+                <div class="contenedor-copiar">
+                    <input type="button" class="btn-copiar" value="Copiar">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Desarrollado por: Daniel Sánchez - 2023</p>
+        </footer>
+        <script src="scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,375 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    box-sizing: border-box;
+}    
+
+header
+{
+    width: 100%;
+    height: 50px;
+}
+
+header img
+{
+    width: auto;
+    height: 38px;
+    margin-top: 12px;
+}
+
+body
+{
+    background-color: #F3F5FC;
+}
+
+main
+{
+    width: 100%;
+    height: 87%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1
+{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+
+.text-area
+{
+    width: 70%;
+    height: 75%;
+    font-size: 32px;
+    background-color: #F3F5FC;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border: none;
+    resize: none;
+    outline: none;
+    text-transform: lowercase;
+}
+
+.contenedor-icono
+{
+    width: 70%;
+    height: 20px;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.contenedor-icono img
+{
+    width: 20px;
+    height: 20px;
+}
+
+.contenedor-icono p
+{
+    font-size: 16px;
+    margin-left: 2px;
+}
+
+.contenedor-botones
+{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-limpiar
+{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-enc, .btn-desenc, .btn-copiar
+{
+    width: 48%;
+    height: 45px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0A3871;
+    background: #D8DFE8;
+    border-width: 1px;
+    border-color:#0A3871 ;
+    border-radius: 18px;
+    transition: .5s all;
+    cursor: pointer;
+}
+
+.btn-enc:hover, .btn-desenc:hover, .btn-copiar:hover
+{
+    background: #0A3871;
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn-limpiar
+{
+    width: 15%;
+    height: 35px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #0A3871;
+    background: #D8DFE8;
+    border-width: 1px;
+    border-color:#0A3871;
+    border-radius: 18px;
+    transition: .5s all;
+    cursor: pointer;
+}
+
+.btn-limpiar:hover
+{
+    background: #e30000;
+    color: white;
+    transform: scale(1.05);
+}
+
+.section2
+{
+    width: 25%;
+    background-color: #fff;
+    margin-right: 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+}
+
+.contenedor-munieco
+{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.contenedor-munieco img
+{
+    width: 90%;
+    height: 65%;
+    margin: auto;
+}
+
+.contenedor-h3
+{
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+.contenedor-resultado
+{
+    width: 100%;
+    height: 85%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.accion-realizada
+{
+    font-weight: bold;
+}
+
+.text-result
+{
+    width: 100%;
+    height: 90%;
+    margin-top: 5px;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.contenedor-copiar
+{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+}
+
+.btn-copiar
+{
+    display: block;
+    margin: auto;
+}
+
+footer
+{
+    width: 100%;
+    height: 50px;
+    display: flex; 
+    text-align: center;  
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hidden
+{
+    display: none;
+}
+
+/* Desktop: 1440px X 900px */
+@media screen and (min-width: 1440px), screen and (max-width: 1440px)
+{
+    body
+    {
+        height: 900px;
+    }
+
+}
+
+/* Desktop: 1024px X 900px */
+@media screen and (max-width: 1024px)
+{
+    body
+    {
+        height: 900px;
+    }
+    .section1
+    {
+        width: 60%;
+    }
+    .section2
+    {
+        width: 35%;
+    }
+    .btn-limpiar
+    {
+        min-width: 100px;
+    }
+}
+
+/* Tablet: 768px X 1024 */
+@media screen and (max-width: 768px)
+{
+    body
+    {
+        height: 1024px;
+    }
+    main
+    {
+        display: block;
+    }
+    .section1
+    {
+        width: 100%;
+        height: 60%;
+    }
+    .text-area
+    {
+        width: 95%;
+        height: 75%;
+    }
+    .contenedor-icono
+    {
+        width: 95%;
+    }
+    .contenedor-botones
+    {
+        width: 95%;
+    }
+    .btn-limpiar
+    {
+        min-width: 100px;
+    }
+    .section2
+    {
+        width: 95%;
+        height: 35%;
+        margin: 20px auto;
+    }
+    .contenedor-munieco, .contenedor-munieco img
+    {
+        display: none;
+    }
+    .contenedor-h3
+    {
+        width: 95%;
+        height: 100%;
+    }
+    .contenedor-h3 h3
+    {
+        height: 100%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenedor-resultado
+    {
+        height: 75%;
+    }
+    .contenedor-copiar
+    {
+        height: 20%;
+    }
+}
+
+/* Celular 375px X 933px */
+@media screen and (max-width: 375px)
+{
+    body
+    {
+        width: 375px;
+        height: 933px;
+    }
+    main
+    {
+        display: block;
+    }
+    .section1
+    {
+        width: 100%;
+        height: 60%;
+    }
+    .contenedor-botones
+    {
+        width: 95%;
+        height: 21%;
+        display: flex;
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section2
+    {
+        width: 95%;
+        height: 28%;
+        margin-top: 80px;
+    }
+    .btn-enc, .btn-desenc, .btn-copiar
+    {
+        width: 100%;
+    }
+    .btn-limpiar
+    {
+        min-width: none;
+        width: 95%;
+    }
+    .btn-copiar
+    {
+        width: 92%;
+    }
+    footer
+    {
+        height: 30px;
+    }
+}
